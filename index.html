@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Login</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('banner.jpg');
+    height: 100vh;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.login-container {
+    background-color: #1f1f1f;
+    padding: 20px;
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+    background: linear-gradient( gray white);
+    background:transparent;
+    backdrop-filter: blur(3px);
+    box-shadow: inset 0px -10px 323px black,
+                inset 11px 18px 256px black;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #ff4a57;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+ .input {
+    height: 55px;
+    padding: 10px;
+    border: 1px solid #c2b5b6;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 41px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+
+.btn {
+    height: 55px;
+    padding: 10px;
+    background-color: #EE0B0F;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    position: relative;
+    top: 41px;
+}
+.btn a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 16px;
+    color: aliceblue;
+}
+
+.btn:hover {
+    background-color: #C90404;
+}
+
+
+#errorMessage {
+    color: #ff4a57;
+    margin-top: 10px;
+}
+.me{
+    left: 12px;
+    right: 0px;
+    top: 69px;
+    bottom: 0px;
+    position: relative;
+}
+.forgot{
+    left: 12px;
+    top: 91px;
+    position: relative;
+}
+.forgot .f1{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(20, 149, 255);
+    position: relative;
+    top: -43px;
+    left: 233px;
+}
+
+.forgot a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(20, 149, 255);
+    position: relative;
+    top: 10px;
+    right: 114px;
+}
+
+.forgot label{
+    position: relative;
+    top: -25px;
+    left: 56px;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            
+            <input type="email" id="email" name="email" placeholder="Email or mobile number" class="input" required>
+
+            
+            <input type="password" id="password" name="password" placeholder="Password" class="input" required>
+
+            <button class="btn" type="submit"><a href="Menuicon.html">Login</a></button>
+
+            <div class="me">
+                <label for=""><input type="checkbox">Remember me</label>
+            </div>
+            
+        <div class="forgot">
+            <a href="#" class="f1">Forgot Password?</a><br><br>
+
+            <label for="">Do You want to create new account?</label>
+
+            <a href="signup.html">Sign-up</a>
+        </div>
+        </form>
+        <p id="errorMessage"></p>
+    </div>
+
+   
+
+   
+</body>
+</html>
